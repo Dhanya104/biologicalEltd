@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BiologicalEltd - Get your medicines delivered 24/7. Consult doctors online, order lab tests, and shop trusted health products with fast delivery." />
+  <meta name="keywords" content="medicine delivery, online pharmacy, doctor consultation, lab tests, health products" />
+  <meta name="author" content="BiologicalEltd" />
+  <meta property="og:title" content="BiologicalEltd - Medicine Delivered 24/7" />
+  <meta property="og:description" content="Order medicines, consult doctors, and book lab tests online." />
+  <meta property="og:type" content="website" />
+  <title>BiologicalEltd - Medicine Delivered 24/7</title>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Pharmacy","name":"BiologicalEltd","description":"Online pharmacy and doctor consultation platform","telephone":"(704) 555-0127","address":{"@type":"PostalAddress","streetAddress":"218 Thornridge Cir. Syracuse","addressRegion":"Connecticut","postalCode":"35624"},"url":"https://BiologicalEltd.com"}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="BiologicalEltd Home">
+        <span class="logo-icon">&#10010;</span>
+        <span class="logo-text">BiologicalEltd</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#medicines">Medicines</a>
+        <a href="#blog">Blog</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search" id="searchBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </button>
+        <a href="#contact" class="btn-login">Log In</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="search" placeholder="Search medicines, doctors, lab testsâ€¦" id="searchInput" aria-label="Search" />
+        <button class="btn-primary" onclick="document.getElementById('searchBar').classList.remove('active')">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="container hero-inner">
+      <div class="hero-content" data-aos="fade-right">
+        <h1 class="hero-title">Get Your Medicine<br />Delivered <span class="accent">24/7</span></h1>
+        <p class="hero-sub">Get up to 20% off on any product you order and get fast delivery on medicine, right to your doorstep.</p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn-primary">Buy Now</a>
+          <a href="#about" class="btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>50K+</strong><span>Happy Customers</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>10K+</strong><span>Products</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>500+</strong><span>Doctors</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="hero-blob"></div>
+        <div class="hero-quote-card">
+          <span class="quote-icon">"</span>
+          <p>Stop Paying too Much For Your Prescription</p>
+        </div>
+        <!-- SVG Doctor Illustration -->
+        <svg class="hero-img" viewBox="0 0 260 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Doctor illustration" role="img">
+          <!-- Body/Coat -->
+          <ellipse cx="130" cy="340" rx="90" ry="50" fill="#e0f4fd"/>
+          <rect x="60" y="210" width="140" height="160" rx="30" fill="#ffffff" stroke="#d0eaff" stroke-width="2"/>
+          <!-- Coat lapels -->
+          <path d="M130 220 L105 260 L130 250 L155 260 Z" fill="#c5e0f5"/>
+          <!-- Stethoscope -->
+          <path d="M100 240 Q85 270 90 290 Q95 310 110 310 Q125 310 130 300" stroke="#1a9fd4" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="130" cy="302" r="8" fill="#1a9fd4" opacity=".85"/>
+          <!-- Shirt under coat -->
+          <rect x="110" y="220" width="40" height="90" rx="8" fill="#b3e5fc"/>
+          <!-- Neck -->
+          <rect x="118" y="175" width="24" height="40" rx="10" fill="#f4c2a0"/>
+          <!-- Head -->
+          <ellipse cx="130" cy="155" rx="46" ry="52" fill="#f4c2a0"/>
+          <!-- Hair -->
+          <ellipse cx="130" cy="120" rx="46" ry="30" fill="#4a3728"/>
+          <path d="M84 135 Q80 170 86 185" stroke="#4a3728" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M176 135 Q180 165 176 180" stroke="#4a3728" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <!-- Ears -->
+          <ellipse cx="84" cy="158" rx="8" ry="10" fill="#f0b08a"/>
+          <ellipse cx="176" cy="158" rx="8" ry="10" fill="#f0b08a"/>
+          <!-- Eyes -->
+          <ellipse cx="114" cy="158" rx="6" ry="7" fill="white"/>
+          <ellipse cx="146" cy="158" rx="6" ry="7" fill="white"/>
+          <circle cx="115" cy="159" r="4" fill="#2d1a0e"/>
+          <circle cx="147" cy="159" r="4" fill="#2d1a0e"/>
+          <circle cx="116" cy="157" r="1.5" fill="white"/>
+          <circle cx="148" cy="157" r="1.5" fill="white"/>
+          <!-- Eyebrows -->
+          <path d="M107 149 Q114 145 121 149" stroke="#4a3728" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M139 149 Q146 145 153 149" stroke="#4a3728" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <!-- Nose -->
+          <path d="M128 165 Q130 175 132 165" stroke="#d4946a" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- Smile -->
+          <path d="M116 178 Q130 190 144 178" stroke="#c0705a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <!-- Teeth -->
+          <path d="M119 180 Q130 188 141 180" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- Arms -->
+          <rect x="42" y="220" width="28" height="110" rx="14" fill="#ffffff" stroke="#d0eaff" stroke-width="1.5"/>
+          <rect x="190" y="220" width="28" height="110" rx="14" fill="#ffffff" stroke="#d0eaff" stroke-width="1.5"/>
+          <!-- Hands -->
+          <ellipse cx="56" cy="336" rx="16" ry="13" fill="#f4c2a0"/>
+          <ellipse cx="204" cy="336" rx="16" ry="13" fill="#f4c2a0"/>
+          <!-- Medicine bottle in right hand -->
+          <rect x="196" y="300" width="20" height="32" rx="5" fill="#4fc3f7" opacity=".9"/>
+          <rect x="199" y="294" width="14" height="10" rx="3" fill="#1a9fd4"/>
+          <line x1="204" y1="312" x2="212" y2="312" stroke="white" stroke-width="2"/>
+          <line x1="208" y1="308" x2="208" y2="316" stroke="white" stroke-width="2"/>
+          <!-- Plus badge on coat -->
+          <circle cx="145" cy="235" r="10" fill="#1a9fd4"/>
+          <line x1="145" y1="229" x2="145" y2="241" stroke="white" stroke-width="2.5"/>
+          <line x1="139" y1="235" x2="151" y2="235" stroke="white" stroke-width="2.5"/>
+        </svg>
+        <div class="upload-card">
+          <span class="upload-icon">&#8853;</span>
+          <div><strong>Upload Prescription</strong><small>Easy & Secure</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="medicines" aria-label="Our services">
+    <div class="container">
+      <h2 class="section-title">Best Deals For You!</h2>
+      <div class="services-grid">
+        <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" width="60" height="60"><rect x="4" y="12" width="40" height="32" rx="4"/><polygon points="44,20 60,12 60,44 44,44"/><circle cx="14" cy="52" r="4"/><circle cx="34" cy="52" r="4"/><line x1="4" y1="52" x2="48" y2="52"/></svg>
+          </div>
+          <button class="service-arrow" aria-label="Go to video consultation">&#8594;</button>
+        </article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <h3>Find Doctors Near You</h3>
+          <p>Confirmed appointments</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" width="60" height="60"><circle cx="32" cy="20" r="12"/><path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/><line x1="24" y1="14" x2="24" y2="26"/><line x1="18" y1="20" x2="30" y2="20"/></svg>
+          </div>
+          <button class="service-arrow" aria-label="Find doctors near you">&#8594;</button>
+        </article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <h3>24/7 Medicines</h3>
+          <p>Essentials at your doorstep</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" width="60" height="60"><rect x="20" y="8" width="24" height="40" rx="4"/><line x1="28" y1="20" x2="36" y2="20"/><line x1="32" y1="16" x2="32" y2="24"/><circle cx="32" cy="38" r="4"/><ellipse cx="12" cy="52" rx="8" ry="6"/><ellipse cx="52" cy="52" rx="8" ry="6"/></svg>
+          </div>
+          <button class="service-arrow" aria-label="Order medicines 24/7">&#8594;</button>
+        </article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="240">
+          <h3>Lab Tests</h3>
+          <p>Sample pickup at your home</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" width="60" height="60"><path d="M24 8 L24 36 L12 52 L52 52 L40 36 L40 8 Z"/><line x1="18" y1="32" x2="46" y2="32"/><line x1="24" y1="8" x2="40" y2="8"/><circle cx="28" cy="44" r="3"/></svg>
+          </div>
+          <button class="service-arrow" aria-label="Book lab tests">&#8594;</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRENDING PRODUCTS ===== -->
+  <section class="products" id="shop" aria-label="Trending products">
+    <div class="container">
+      <h2 class="section-title">Trending Product For You!</h2>
+      <div class="products-grid" id="productsGrid1">
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-img-wrap" style="background:#e8f4fd;">
+            <img src="prod1.png" alt="Turmeric and Ginger Gummies vitamin supplement" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Turmeric &amp; Ginger Gummies</h3>
+            <div class="price"><span class="new-price">$9.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Turmeric &amp; Ginger Gummies')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-img-wrap" style="background:#fde8e8;">
+            <img src="prod2.png" alt="Ambrodil Plus 100ml cough syrup for kids" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Ambrodil Plus 100ml for Kids</h3>
+            <div class="price"><span class="new-price">$12.47</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Ambrodil Plus')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-img-wrap" style="background:#e8fdf0;">
+            <img src="prod2.png" alt="Stobal Cough Syrup for cough relief" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Stobal Cough Syrup for Cough</h3>
+            <div class="price"><span class="new-price">$9.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Stobal Cough Syrup')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="product-img-wrap" style="background:#fdf5e8;">
+            <img src="prod3.png" alt="Kids Cough Crusader 4fl medicine" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Kids Cough Crusader 4fl</h3>
+            <div class="price"><span class="new-price">$9.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Kids Cough Crusader')">+ Add To Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="center-btn"><a href="#shop" class="btn-primary">Shop All</a></div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY BANNERS ===== -->
+  <section class="banners" id="offers" aria-label="Special offers">
+    <div class="container banners-grid">
+      <div class="banner-large" data-aos="fade-right">
+        <span class="badge">On 30% Off</span>
+        <small>Vitamins &amp; Supplements</small>
+        <h2>Vitamins &amp; Supplements</h2>
+        <a href="#shop" class="btn-primary">Buy Now</a>
+        <img src="prod1.png" alt="Green tea fat burner supplement bottle" loading="lazy" class="banner-img" />
+      </div>
+      <div class="banner-stack">
+        <div class="banner-small banner-yellow" data-aos="fade-left">
+          <div>
+            <small>Used to treat high-blood pressure</small>
+            <h3>Carca 12.5</h3>
+            <a href="#shop" class="btn-outline-sm">Buy Now</a>
+          </div>
+          <img src="prod3.png" alt="Carca 12.5 blood pressure tablets" loading="lazy" class="banner-sm-img" />
+        </div>
+        <div class="banner-small banner-blue" data-aos="fade-left" data-aos-delay="100">
+          <div>
+            <small>Used to treat high-blood pressure</small>
+            <h3>Life Extension Body</h3>
+            <a href="#shop" class="btn-outline-sm">Buy Now</a>
+          </div>
+          <img src="prod2.png" alt="Life Extension Body supplement bottles" loading="lazy" class="banner-sm-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about" aria-label="About BiologicalEltd">
+    <div class="container about-inner">
+      <div class="about-img-wrap" data-aos="fade-right">
+        <img src="about_pharmacist.png" alt="Expert pharmacist in professional white coat ready to consult" loading="lazy" class="about-img" />
+        <div class="about-badge">
+          <span class="badge-dot">&#10003;</span>
+          <div>
+            <strong>Successfully Providing Work Solution From 10 years</strong>
+          </div>
+        </div>
+        <div class="about-expert">
+          <img src="about_pharmacist.png" alt="Nova Anderson expert in medicine" loading="lazy" class="expert-thumb" />
+          <div>
+            <strong>Nova Anderson</strong>
+            <small>Expert in medicine</small>
+          </div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <span class="section-label">ABOUT US</span>
+        <h2>Consult An Expert Over<br />Audio Or Video</h2>
+        <p>We connect you with experienced, certified medical professionals available around the clock. Get reliable health guidance from the comfort of your home through secure audio or video consultations.</p>
+        <ul class="about-list">
+          <li><span class="check">&#10003;</span> Duis aute irure dolor in reprehenderit</li>
+          <li><span class="check">&#10003;</span> Excepteur sint occaecat cupidatat non-proident</li>
+          <li><span class="check">&#10003;</span> Qui officia deserunt mollit anim id est laborum</li>
+        </ul>
+        <a href="#contact" class="btn-primary">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECOND PRODUCTS ROW ===== -->
+  <section class="products products-alt" aria-label="More trending products">
+    <div class="container">
+      <h2 class="section-title">Trending Product For You!</h2>
+      <div class="products-grid">
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-img-wrap" style="background:#fde8f4;">
+            <img src="prod3.png" alt="Savavet Aceptor Control medicine" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Savavet Aceptor Control</h3>
+            <div class="price"><span class="new-price">$9.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Savavet Aceptor')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-img-wrap" style="background:#e8f4fd;">
+            <img src="prod2.png" alt="Stobal Cough Syrup medicine" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Stobal Cough Syrup</h3>
+            <div class="price"><span class="new-price">$14.47</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Stobal Cough Syrup')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-img-wrap" style="background:#fdfae8;">
+            <img src="prod1.png" alt="Glycotrol Formula 90 capsules supplement" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Glycotrol Formula 90 Capsules</h3>
+            <div class="price"><span class="new-price">$12.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Glycotrol Formula')">+ Add To Cart</button>
+          </div>
+        </article>
+        <article class="product-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="product-img-wrap" style="background:#fdf0e8;">
+            <img src="prod3.png" alt="Alfalfa Tonic for immune improvement" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3>Alfalfa Tonic for Improve</h3>
+            <div class="price"><span class="new-price">$9.10</span><span class="old-price">$13.15</span></div>
+            <button class="btn-cart" onclick="addToCart(this, 'Alfalfa Tonic')">+ Add To Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="center-btn"><a href="#shop" class="btn-primary">Shop All</a></div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" id="blog" aria-label="Customer reviews">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="reviews-wrapper">
+        <button class="review-nav prev" id="prevReview" aria-label="Previous review">&#8249;</button>
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-meta"><span>11th June 2023</span><span class="quote-big">"</span></div>
+            <p>Interdum velit laoreet id donec. Proin sed libero enim sed faucibus turpis in eu. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background:#b8d4e8;">JK</div>
+              <div><strong>Julie Keen</strong><div class="stars">â˜…â˜…â˜…â˜…â˜…</div></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-meta"><span>12th March 2023</span><span class="quote-big">"</span></div>
+            <p>Interdum velit laoreet id donec. Proin sed libero enim sed faucibus turpis in eu. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background:#e8c4a0;">BS</div>
+              <div><strong>Brooklyn Simmons</strong><div class="stars">â˜…â˜…â˜…â˜…â˜…</div></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-meta"><span>09th Dec 2023</span><span class="quote-big">"</span></div>
+            <p>Interdum velit laoreet id donec. Proin sed libero enim sed faucibus turpis in eu. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background:#f0b8b8;">CW</div>
+              <div><strong>Cameron Williamson</strong><div class="stars">â˜…â˜…â˜…â˜…â˜†</div></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-meta"><span>15th Jan 2024</span><span class="quote-big">"</span></div>
+            <p>Outstanding service and quick delivery! The medicines arrived in perfect condition and the pharmacist was very helpful in answering my queries about dosage.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background:#c8e8c0;">AM</div>
+              <div><strong>Alice Morgan</strong><div class="stars">â˜…â˜…â˜…â˜…â˜…</div></div>
+            </div>
+          </div>
+        </div>
+        <button class="review-nav next" id="nextReview" aria-label="Next review">&#8250;</button>
+      </div>
+      <div class="review-dots" id="reviewDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact" aria-label="Contact BiologicalEltd">
+    <div class="container contact-inner">
+      <div data-aos="fade-right">
+        <span class="section-label">GET IN TOUCH</span>
+        <h2>Have Questions?<br/>We're Here to Help</h2>
+        <p>Reach out anytime &ndash; our medical team is available 24/7 to assist you with orders, prescriptions, or consultations.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">ðŸ“</span>
+            <span>218 Thornridge Cir. Syracuse, Connecticut 35624</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">âœ‰ï¸</span>
+            <span>enquiries@BiologicalEltd.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">ðŸ“ž</span>
+            <span>(704) 555-0127</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" data-aos="fade-left" id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="fname" name="name" placeholder="Full Name" required aria-label="Full name" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="femail" name="email" placeholder="Email Address" required aria-label="Email address" />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="fphone" name="phone" placeholder="Phone Number" aria-label="Phone number" />
+        </div>
+        <div class="form-group">
+          <textarea id="fmessage" name="message" rows="4" placeholder="Your Message" required aria-label="Message"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Send Message</button>
+        <div class="form-success" id="formSuccess">&#10003; Message sent! We'll get back to you shortly.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo logo-white">
+          <span class="logo-icon">&#10010;</span>
+          <span class="logo-text">BiologicalEltd</span>
+        </div>
+        <p>Interdum velit laoreet id donec. Proin sed libero enim sed faucibus turpis in eu. Ve stibulum rhoncus est pellentesqu.</p>
+      </div>
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#medicines">Medicines</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Other links">
+        <h4>Other Link</h4>
+        <ul>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Complaints</a></li>
+          <li><a href="#">Terms &amp; conditions</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <address>
+          <p>ðŸ“ 218 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
+          <p>âœ‰ï¸ enquiries@BiologicalEltd.com</p>
+          <p>ðŸ“ž (704) 555-0127</p>
+        </address>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" class="social-btn">f</a>
+          <a href="#" aria-label="YouTube" class="social-btn">&#9654;</a>
+          <a href="#" aria-label="Instagram" class="social-btn">&#9673;</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 BiologicalEltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast" role="alert" aria-live="polite"></div>
+
+  <!-- Cart Button -->
+  <button class="floating-cart" id="floatingCart" aria-label="View cart">
+    &#128722; <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
